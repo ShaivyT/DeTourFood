@@ -4,7 +4,7 @@ module.exports = mongoose.Schema({
    name: String,
    phoneNumber: Number,
    cuisineType: String,
-   menu: [{
+   menuList: [{
        type: mongoose.Schema.Types.ObjectId,
        ref: 'MenuModel'
    }],
